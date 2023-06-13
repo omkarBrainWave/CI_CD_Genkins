@@ -55,6 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>SpringBootDocker</finalName>
 	</build>
 
 </project>
