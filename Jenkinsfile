@@ -33,30 +33,19 @@ pipeline {
             }
         }
         
-        stage('Push Docker Image to Kubernetes Cluster') {
-            steps {
-                script {
-                    // Perform the necessary steps to push the Docker image to your Kubernetes cluster.
-                    // This may vary depending on your cluster setup. You can use tools like kubectl or helm.
-                    // Make sure you have the necessary credentials and configuration for your cluster.
-                    // Example:
-                    sh 'kubectl apply -f deployment.yaml'
-                }
-            }
-        }
     }
 }
 
 
 credentials {
     usernamePassword(
-        credentialsId: ,
+        credentialsId: 1234 ,
         usernameVariable: 'omkarBrainWave',
         passwordVariable: 'Brain@#12'
     )
     
     usernamePassword(
-        credentialsId: 'docker-hub-credentials',
+        credentialsId: 12345 ,
         usernameVariable: 'omkar',
         passwordVariable: 'omkar'
     )
