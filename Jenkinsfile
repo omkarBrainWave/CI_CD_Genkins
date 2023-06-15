@@ -42,7 +42,7 @@ credentials {
         credentialsId: 1234 ,
         usernameVariable: 'omkarBrainWave',
         passwordVariable: 'Brain@#12'
-    )
+                    )
     
     usernamePassword(
         credentialsId: 12345 ,
