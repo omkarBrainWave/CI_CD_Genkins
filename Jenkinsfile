@@ -15,5 +15,11 @@ pipeline {
                 bat 'mvn clean package'
             }
         }
+        stage('Build Docker Image'){
+            steps {
+                docker build -t omkarbrainwave/cicdpipeline:latest .             
+                docker login -u="omkarbrainwave" -p="Brain@#123"
+          }
+          }  
     }
 }
